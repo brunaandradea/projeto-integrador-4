@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
+import { EstruturaModule } from './estrutura/estrutura-module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContadorModule } from './contador/contador-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContadorModule
+    ContadorModule,
+    EstruturaModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

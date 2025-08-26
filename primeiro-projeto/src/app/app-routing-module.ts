@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContadorModule } from './contador/contador-module';
+import { Soma } from './contador/soma/soma';
+import { Diretiva } from './estrutura/diretiva/diretiva';
 
 const routes: Routes = [
-  {
-    path: "",
-    component: ContadorModule
-  },
+ { path: 'contador', component: Soma},
+ { path: 'alunos', component: Diretiva }, 
 ];
 
 @NgModule({
