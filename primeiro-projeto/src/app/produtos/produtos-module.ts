@@ -1,18 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Estoque } from './estoque/estoque';
+import { ListaProdutos } from './lista-produtos/lista-produtos';
+import { SharedModule } from '../shared/shared-module';
+import { ProdutosRoutingModuleTsModule } from './produtos-routing.module.ts-module';
 
 
 
 @NgModule({
   declarations: [
-    Estoque
+    Estoque,
+    ListaProdutos
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule, 
+    ProdutosRoutingModuleTsModule
   ],
   exports: [
-    Estoque
+    Estoque,
+    ListaProdutos
   ]
 
 })

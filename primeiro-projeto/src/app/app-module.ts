@@ -11,7 +11,7 @@ import { ProdutosModule } from './produtos/produtos-module';
 @NgModule({
   declarations: [
     App,
-    Soma
+    Soma,
   ],
   imports: [
     BrowserModule,
