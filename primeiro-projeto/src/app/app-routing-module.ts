@@ -4,12 +4,14 @@ import { Soma } from './contador/soma/soma';
 import { Diretiva } from './estrutura/diretiva/diretiva';
 import { Estoque } from './produtos/estoque/estoque';
 import { ListaProdutos } from './produtos/lista-produtos/lista-produtos';
+import { Material } from './teste-mat/material/material';
 
 const routes: Routes = [
  { path: 'contador', component: Soma},
  { path: 'alunos', component: Diretiva },
  { path: 'estoque', component: Estoque }, 
  { path: 'produtos', component: ListaProdutos },
+ { path: 'teste-mat', component: Material },
 ];
 
 @NgModule({

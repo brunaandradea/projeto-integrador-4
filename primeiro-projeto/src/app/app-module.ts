@@ -7,6 +7,7 @@ import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
 import { EstruturaModule } from './estrutura/estrutura-module';
 import { ProdutosModule } from './produtos/produtos-module';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProdutosModule } from './produtos/produtos-module';
     AppRoutingModule,
     ContadorModule,
     EstruturaModule,
-    ProdutosModule
+    ProdutosModule,
+    MatToolbarModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
