@@ -5,7 +5,8 @@ import { MatCardContent, MatCardSubtitle, MatCard, MatCardHeader, MatCardTitle }
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     MatCardActions,

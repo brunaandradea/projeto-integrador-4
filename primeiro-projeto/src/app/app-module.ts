@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Soma } from './contador/soma/soma';
 import { ContadorModule } from './contador/contador-module';
 import { EstruturaModule } from './estrutura/estrutura-module';
 import { ProdutosModule } from './produtos/produtos-module';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
     App,
-    Soma,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +20,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     ContadorModule,
     EstruturaModule,
     ProdutosModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatTableModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
