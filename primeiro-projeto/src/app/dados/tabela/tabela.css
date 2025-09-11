@@ -1,0 +1,10 @@
+.botao-verde {
+  background-color: green;
+  color: white;
+  margin-right: 5px; 
+}
+
+.botao-vermelho {
+  background-color: red;
+  color: white;
+}

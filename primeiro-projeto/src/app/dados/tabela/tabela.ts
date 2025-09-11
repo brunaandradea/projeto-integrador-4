@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 export interface Produto {
   nome: string;
   quantidade: number;
@@ -12,8 +13,11 @@ export interface Produto {
   styleUrl: './tabela.css'
 })
 export class Tabela {
-  displayedColumns: string[] = ['nome', 'quantidade'];
+  displayedColumns: string[] = ['nome', 'quantidade', 'funcionalidade'];
   
+    openBottomSheet(): void {
+    console.log('openBottomSheet called');
+  }
 
   dataSource: Produto[] = [
     {nome: 'Coca-Cola', quantidade: 10},
